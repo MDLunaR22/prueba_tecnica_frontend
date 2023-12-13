@@ -21,6 +21,7 @@ export const EditTasaCambio = () => {
 
     const deleteMoneda = async (id) => {
         await deleteMonedas(id);
+        window.location.reload();
     }
 
     useEffect(() => {
